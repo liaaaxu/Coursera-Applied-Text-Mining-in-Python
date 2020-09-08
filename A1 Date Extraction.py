@@ -1,6 +1,3 @@
-
-# coding: utf-8
-
 # # Assignment 1
 # 
 # In this assignment, you'll be working with messy medical data and using regex to extract relevant infromation from the data. 
@@ -47,8 +44,6 @@
 # 
 # *This function should return a Series of length 500 and dtype int.*
 
-# In[1]:
-
 
 import pandas as pd
 import numpy as np
@@ -62,8 +57,6 @@ with open('dates.txt') as file:
 df = pd.DataFrame(doc, columns=['text'])
 df.head()
 
-
-# In[2]:
 
 
 def date_sorter():
@@ -126,15 +119,4 @@ def date_sorter():
     
     return pd.Series(np.argsort(df['date']), dtype="int32")
 
-
-# In[5]:
-
-
 date_sorter()
-
-
-# In[ ]:
-
-
-
-
