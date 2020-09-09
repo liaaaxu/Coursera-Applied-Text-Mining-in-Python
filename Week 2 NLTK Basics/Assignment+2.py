@@ -1,19 +1,9 @@
 
-# coding: utf-8
-
-# ---
-# 
-# _You are currently looking at **version 1.0** of this notebook. To download notebooks and datafiles, as well as get help on Jupyter notebooks in the Coursera platform, visit the [Jupyter Notebook FAQ](https://www.coursera.org/learn/python-text-mining/resources/d9pwm) course resource._
-# 
-# ---
-
 # # Assignment 2 - Introduction to NLTK
 # 
 # In part 1 of this assignment you will use nltk to explore the Herman Melville novel Moby Dick. Then in part 2 you will create a spelling recommender function that uses nltk to find words similar to the misspelling. 
 
 # ## Part 1 - Analyzing Moby Dick
-
-# In[30]:
 
 
 import nltk
@@ -37,7 +27,6 @@ text1 = nltk.Text(moby_tokens)
 # 
 # *This function should return an integer.*
 
-# In[5]:
 
 
 def example_one():
@@ -53,7 +42,6 @@ example_one()
 # 
 # *This function should return an integer.*
 
-# In[6]:
 
 
 def example_two():
@@ -69,7 +57,6 @@ example_two()
 # 
 # *This function should return an integer.*
 
-# In[9]:
 
 
 from nltk.stem import WordNetLemmatizer
@@ -88,7 +75,6 @@ example_three()
 # 
 # *This function should return a float.*
 
-# In[10]:
 
 
 def answer_one():
@@ -105,7 +91,6 @@ answer_one()
 # 
 # *This function should return a float.*
 
-# In[28]:
 
 
 def answer_two():
@@ -124,7 +109,6 @@ answer_two()
 # 
 # *This function should return a list of 20 tuples where each tuple is of the form `(token, frequency)`. The list should be sorted in descending order of frequency.*
 
-# In[12]:
 
 
 def answer_three():
@@ -142,7 +126,6 @@ answer_three()
 # 
 # *This function should return an alphabetically sorted list of the tokens that match the above constraints. To sort your list, use `sorted()`*
 
-# In[13]:
 
 
 def answer_four():
@@ -162,7 +145,6 @@ answer_four()
 # 
 # *This function should return a tuple `(longest_word, length)`.*
 
-# In[14]:
 
 
 def answer_five():
@@ -183,7 +165,6 @@ answer_five()
 # 
 # *This function should return a list of tuples of the form `(frequency, word)` sorted in descending order of frequency.*
 
-# In[27]:
 
 
 def answer_six():
@@ -204,7 +185,6 @@ answer_six()
 # 
 # *This function should return a float.*
 
-# In[16]:
 
 
 def answer_seven():
@@ -223,7 +203,6 @@ answer_seven()
 # 
 # *This function should return a list of tuples of the form `(part_of_speech, frequency)` sorted in descending order of frequency.*
 
-# In[19]:
 
 
 def answer_eight():
@@ -246,7 +225,6 @@ answer_eight()
 # 
 # Each of the recommenders should provide recommendations for the three default words provided: `['cormulent', 'incendenece', 'validrate']`.
 
-# In[22]:
 
 
 from nltk.corpus import words
@@ -262,7 +240,6 @@ correct_spellings = words.words()
 # *This function should return a list of length three:
 # `['cormulent_reccomendation', 'incendenece_reccomendation', 'validrate_reccomendation']`.*
 
-# In[31]:
 
 
 def answer_nine(entries=['cormulent', 'incendenece', 'validrate']):
@@ -291,7 +268,6 @@ answer_nine()
 # *This function should return a list of length three:
 # `['cormulent_reccomendation', 'incendenece_reccomendation', 'validrate_reccomendation']`.*
 
-# In[32]:
 
 
 def answer_ten(entries=['cormulent', 'incendenece', 'validrate']):
@@ -321,7 +297,6 @@ answer_ten()
 # *This function should return a list of length three:
 # `['cormulent_reccomendation', 'incendenece_reccomendation', 'validrate_reccomendation']`.*
 
-# In[26]:
 
 
 def answer_eleven(entries=['cormulent', 'incendenece', 'validrate']):
@@ -340,10 +315,3 @@ def answer_eleven(entries=['cormulent', 'incendenece', 'validrate']):
     return output
     
 answer_eleven()
-
-
-# In[ ]:
-
-
-
-
